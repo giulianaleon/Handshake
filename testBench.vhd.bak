@@ -1,0 +1,64 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity testeBench is
+
+end entity;
+
+architecture rtl of testeBench is
+	signal clk_sg			: std_logic := '0';
+	signal reset_sg		: std_logic := '0';
+	signal ReqLeit_sg 	: std_logic := '0';
+	signal AckES_sg 		: std_logic := '0';
+	signal endereco_sg   : std_logic_vector(7 downto 0) := "00000100";
+	signal dado_sg 		: std_logic_vector(7 downto 0);
+	signal AckMem_sg 		: std_logic := '0';
+	signal DadoPrt_sg 	: std_logic := '0';
+
+component topo is
+	port(
+			clk          : in std_logic;
+			reset	      : in	std_logic;
+			ReqLeit      : in  std_logic;
+			AckES        : in  std_logic;
+			endereco     : in std_logic_vector(7 downto 0);
+			dado 			 : out std_logic_vector(7 downto 0);
+			AckMem       : out std_logic;
+			DadoPrt      : out std_logic
+	);
+end component topo;
+
+begin
+
+inst_topo: topo 
+	port map( 
+		clk => clk_sg,
+		reset => reset_sg,
+		ReqLeit => ReqLeit_sg,
+		AckES => AckES_sg,
+		endereco => endereco_sg,
+		dado => dado_sg,
+		AckMem => AckMem_sg,
+		DadoPrt => DadoPrt_sg
+	);
+
+clk_sg <= not clk_sg after 20 ns;		
+	
+process is
+	begin
+		wait for 0 ns;
+			reset_sg <= '0';
+		wait for 10 ns;
+			ReqLeit_sg <= '1';
+		wait for 40 ns;
+			ReqLeit_sg <= '0';
+		wait for 30 ns;
+			AckES_sg <= '1';
+		wait for 40 ns;
+			AckES_sg <= '0';
+		wait;
+end process;
+	
+end rtl;

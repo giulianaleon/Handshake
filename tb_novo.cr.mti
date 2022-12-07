@@ -1,0 +1,42 @@
+C:/PROJETOS/QUARTUS/ASP02/topo.vhd {1 {vcom -work work -2002 -explicit C:/PROJETOS/QUARTUS/ASP02/topo.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity topo
+-- Compiling architecture behaviour of topo
+
+} {} {}} C:/PROJETOS/QUARTUS/ASP02/asp02.vhd {1 {vcom -work work -2002 -explicit C:/PROJETOS/QUARTUS/ASP02/asp02.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity asp02
+-- Compiling architecture behaviour of asp02
+
+} {} {}} C:/PROJETOS/QUARTUS/ASP02/PC.vhd {1 {vcom -work work -2002 -explicit C:/PROJETOS/QUARTUS/ASP02/PC.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity PC
+-- Compiling architecture RTL of PC
+
+} {} {}} C:/PROJETOS/QUARTUS/ASP02/testBench.vhd {1 {vcom -work work -2002 -explicit C:/PROJETOS/QUARTUS/ASP02/testBench.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity testBench
+-- Compiling architecture behaviour of testBench
+
+} {} {}}
